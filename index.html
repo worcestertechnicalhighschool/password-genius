@@ -8,7 +8,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Password Genius</h1>
+    <header>
+        <h1>Password Genius</h1>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Choose CSS
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-stylesheet="jeff-how">Default</a></li>
+                <li><a class="dropdown-item" href="#" data-stylesheet="jeff-how">Jeff-How</a></li>
+            </ul>
+          </div>
+    </header>
+    <main>
+        <h1>Cool Password Checker</h1>
+        <section class="form">
+          <label for="birthdate">Enter your birthdate</label>
+          <input type="date" name="birthdate" id="birthdate">
+      
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username">
+      
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+      
+          <label for="password">New Password</label>
+          <input type="password" name="password" id="password">
+      
+        </section>
+        <section class="requirements">
+          <h2>Requirements</h2>
+          <ul>
+            <li class="valid">Can't be same as your current password (Birthdate)</li>
+            <li>Can't be the same as your last 12 passwords</li>
+            <li>Can't contain your username.</li>
+            <li class="invalid">Can't contain the word, "password"</li>
+            <li>Can't contain more than 2 letters in your name (in order).</li>
+            <li>Must be at least 8 characters</li>
+            <li>Must contain at least 1 uppercase</li>
+            <li>Must contain at least 1 lowercase</li>
+            <li>Must contain a number</li>
+            <li>Must contain a symbol</li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        &copy; 2023 <a href="https://techhigh.us" target="_blank">Worcester Technical High School</a>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="password-checker.js"></script>
   </body>
