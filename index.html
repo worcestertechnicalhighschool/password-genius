@@ -1,62 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://fav.farm/🧙‍♂️" />
     <title>Password-Genius</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-        <h1>Password Genius</h1>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Choose CSS
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item stylesheet" href="#" data-stylesheet="default">Default</a></li>
-                <li><a class="dropdown-item stylesheet" href="#" data-stylesheet="jeff-how">Jeff-How</a></li>
+    <header class="container site-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Password Genius</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Choose CSS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item stylesheet"
+                      href="#"
+                      data-stylesheet="default"
+                      >Default</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item stylesheet"
+                      href="#"
+                      data-stylesheet="jeff-how"
+                      >Jeff-How</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
-          </div>
+          </div><!--/.navbar-collapse-->
+        </div><!--/.container-fluid -->
+      </nav>
     </header>
-    <main>
-        <h1>Cool Password Checker</h1>
-        <section class="form">
-          <label for="birthdate">Enter your birthdate</label>
-          <input type="date" name="birthdate" id="birthdate">
-      
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username">
-      
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name">
-      
-          <label for="password">New Password</label>
-          <input type="password" name="password" id="password">
-      
-        </section>
-        <section class="requirements">
-          <h2>Requirements</h2>
-          <ul>
-            <li class="valid">Can't be same as your current password (Birthdate)</li>
-            <li>Can't be the same as your last 12 passwords</li>
-            <li>Can't contain your username.</li>
-            <li class="invalid">Can't contain the word, "password"</li>
-            <li>Can't contain more than 2 letters in your name (in order).</li>
-            <li>Must be at least 8 characters</li>
-            <li>Must contain at least 1 uppercase</li>
-            <li>Must contain at least 1 lowercase</li>
-            <li>Must contain a number</li>
-            <li>Must contain a symbol</li>
-          </ul>
-        </section>
-      </main>
-      <footer>
-        &copy; 2023 <a href="https://techhigh.us" target="_blank">Worcester Technical High School</a>
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <main class="container site-main">
+      <h1>Cool Password Checker</h1>
+      <section class="form">
+        <label for="birthdate">Enter your birthdate</label>
+        <input type="date" name="birthdate" id="birthdate" />
+
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="password">New Password</label>
+        <input type="password" name="password" id="password" />
+      </section>
+      <section class="requirements">
+        <h2>Requirements</h2>
+        <ul>
+          <li class="valid">
+            Can't be same as your current password (Birthdate)
+          </li>
+          <li>Can't be the same as your last 12 passwords</li>
+          <li>Can't contain your username.</li>
+          <li class="invalid">Can't contain the word, "password"</li>
+          <li>Can't contain more than 2 letters in your name (in order).</li>
+          <li>Must be at least 8 characters</li>
+          <li>Must contain at least 1 uppercase</li>
+          <li>Must contain at least 1 lowercase</li>
+          <li>Must contain a number</li>
+          <li>Must contain a symbol</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      &copy; 2023
+      <a href="https://techhigh.us" target="_blank"
+        >Worcester Technical High School</a
+      >
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="password-checker.js"></script>
   </body>
 </html>
